@@ -4,16 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:orientation="horizontal"
     android:background="@color/backgroundColor"
     tools:context=".MainActivity">
 
     <TextView
+        android:orientation="horizontal"
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/titleMsg"
-        style="@style/MyTextStyle"
+        style="@style/MyTextStyle.MyTextStyleLand"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="30dp"
@@ -22,8 +23,8 @@
 
     <ImageView
         android:id="@+id/centerImage"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:layout_width="400dp"
+        android:layout_height="150dp"
         android:src="@drawable/guitar"
         android:scaleType="centerCrop"
         android:contentDescription="@string/guitarPicture"
@@ -38,7 +39,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/nextButton"
-        android:textSize="16sp"
+        android:textSize="15sp"
         android:fontFamily="sans-serif-medium"
         android:textStyle="italic"
         android:gravity="center"
@@ -57,7 +58,7 @@
         android:hint="@string/enterTheme"
         android:imeOptions="actionSearch"
         android:inputType="text"
-        android:minHeight="48dp"
+        android:minHeight="30dp"
         android:textAlignment="center"
         android:textColorHint="#827717"
         android:textSize="@dimen/enterTextSize"
@@ -84,7 +85,7 @@
             android:layout_height="wrap_content"
             android:text="@string/yes"
             android:padding="10dp"
-            style="@style/MyTextStyle" />
+            style="@style/MyTextStyle.MyTextStyleLand" />
 
         <RadioButton
             android:id="@+id/noButton"
@@ -92,7 +93,7 @@
             android:layout_height="wrap_content"
             android:text="@string/no"
             android:padding="10dp"
-            style="@style/MyTextStyle" />
+            style="@style/MyTextStyle.MyTextStyleLand" />
     </RadioGroup>
 
     <androidx.constraintlayout.widget.Barrier

@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">IdeaGenerator</string>
+    <string name="app_name">module12_views</string>
+    <string name="testString">testString</string>
+    <string name="titleMsg"><![CDATA[Pictures = New Ideas\n Generate random photos?]]></string>
+    <string name="guitarPicture">guitarImage\n</string>
+    <string name="nextButton">NEXT RANDOM PICTURE</string>
+    <string name="enterTheme">Enter the theme</string>
+    <string name="yes">YES</string>
+    <string name="no">NO</string>
 </resources>
